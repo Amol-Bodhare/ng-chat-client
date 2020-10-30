@@ -9,7 +9,7 @@ export class WebSocketService {
   socket: SocketIOClient.Socket;
 
   constructor() {
-    this.socket = io.connect('http://localhost:3000');
+    this.socket = io.connect('http://fdb56513f6fb.ngrok.io');
   }
 
   listen(eventName: string): Observable<any> {
